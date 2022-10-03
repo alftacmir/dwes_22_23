@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <!-- Programa en el que se ingresen tres notas de un alumno, si el promedio es
+menor que 5 mostrar el mensaje “Repetidor”, entre 5 y 7 mostrar el mensaje
+“Superado” y si es mayor o igual a siete mostrar el mensaje ‘Promocionado’.
+Tener en cuenta que para obtener el promedio debemos operar la suma de las
+notas; y luego hacer promedio=suma/3 -->
+
+        <script>
+
+let num1= Number(prompt("Introduce la primera nota"));
+let num2= Number(prompt("Introduce la segunda nota"));
+let num3= Number(prompt("Introduce la tercera nota"));
+
+(num1+num2+num3)/3 < 5 ? alert("Repetidor") : (num1+num2+num3)/3 > 5 && (num1+num2+num3)/3 < 7 ? alert("Superado") : (num1+num2+num3)/3 <= 7 ? alert("Promocionado");
+
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!-- Crea tres radiobuttons, cuando uno de ellos se seleccione que muestre un
+mensaje diciendo que opción se seleccionó -->
+
+
+    <input type="radio" id="option1"
+     name="options" onclick="escribir(this.value)" value="Opcion 1">Opción 1 <br>
+     <input type="radio" id="option2"
+     name="options" onclick="escribir(this.value)" value="Opcion 2">Opción 2 <br>
+     <input type="radio" id="option3"
+     name="options" onclick="escribir(this.value)" value="Opcion 3">Opción 3 <br>
+
+     <div id="div">
+
+     </div>
+
+     <script>
+
+        function escribir(value){
+            document.getElementById("div").innerHTML = value==="Opcion 1" ? "has seleccionado la opcion 1" : value==="Opcion 2" ? "has selecciionado la opcion 2" : "has seleccionado la opcion 3";
+        }
+        
+        
+
+     </script>
+
+      
+
+
+</body>
+</html>

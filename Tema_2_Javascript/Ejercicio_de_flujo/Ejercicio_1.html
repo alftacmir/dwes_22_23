@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    
+    <!-- Crear dos input de números y un botón, al pulsar el botón, mostrar en un alert
+quien es el mayor de los dos. -->
+
+<input type="number" id="numero1" placeholder="Escribe aquí">
+<input type="number" id="numero2" placeholder="Escribe aquí">
+<input type="button" value="¿Quién es mayor?" onclick="comprobador()">
+
+<script>
+
+    function comprobador(){
+        var v1 = document.getElementById("numero1").value;
+        var v2 = document.getElementById("numero2").value;
+
+        v1>v2 ? alert("el primero es mayor") : v2>v1 ? alert("el segundo es mayor") : alert("son iguales");
+
+        
+    }
+
+
+</script>
+
+
+
+</body>
+</html>

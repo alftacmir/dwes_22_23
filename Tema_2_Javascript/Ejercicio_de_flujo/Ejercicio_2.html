@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    
+    <!-- Dado un input y un botón, escribir nombres de personas (solo controlamos que
+no esté vacío) y lo mostramos en una lista desordenada. -->
+
+        <input type="text" id="nombre" placeholder="Introduce el nombre aquí">
+        <input type="button" value="Insertar" onclick="lista()">
+        <div>
+            <ul id="pantalla">
+
+            </ul>
+        </div>
+
+        <script>
+            
+            let total = "";
+
+            function lista(){
+                let text = document.getElementById("nombre").value;
+                let insercion = "<li>"+ text + "</li>";
+
+                total+=insercion;
+
+                document.getElementById("pantalla").innerHTML = total;
+            }
+
+
+        </script>
+</body>
+</html>
