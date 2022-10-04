@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+
+<body>
+    <!-- Recorrer mediante for-in una variable llamada texto que representa a la cadena
+“ejemplo”.
+¿Qué resultados obtenemos al ejecutar? ¿Qué conclusión podemos extraer? -->
+
+    <script>
+        let texto = "ejemplo";
+        document.write(texto + "</br>")
+        for (const x in texto) {
+            if (texto.hasOwnProperty.call(texto, x)) {
+                const element = texto[x];
+                document.write(element + " ");
+            }
+        }
+    // Lo que hace realmente el for-in es separar elemento a elemento que tu le especifiques el objeto que le pases en este caso la cadena texto nos la separa letra a letra
+    </script>
+</body>
+
+</html>

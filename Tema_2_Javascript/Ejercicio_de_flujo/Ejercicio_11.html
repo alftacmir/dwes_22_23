@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <!-- Realizar un programa que pida cargar una fecha cualquiera, luego verificar si
+dicha fecha corresponde a Navidad (se debe cargar por separado el dia, el mes
+y el año) -->
+
+    <script>
+        let dia = parseInt(prompt("Introduce el dia"));
+        let mes = parseInt(prompt("Introduce el mes"));
+        let anno = parseInt(prompt("Introduce el año"));
+
+
+        (dia <= 31 && dia > 24) && mes == 12 ? alert("Es Navidad") : (dia >= 1 && dia < 7) && mes == 1 ? alert("Es Navidad") : alert("No es Navidad");
+
+
+    </script>
+</body>
+
+</html>

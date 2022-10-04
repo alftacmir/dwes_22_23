@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Vamos a realizar un script que nos pregunte el nombre y la edad. Nos
+responderá con un saludo y nos dirá si somos menores o mayores de edad y
+los días que hemos vivido -->
+
+
+    <script>
+        let nombre = prompt("Introduzca el nombre");
+        let edad = parseInt(prompt("Introduzca la edad"));
+
+        let adulto = edad > 18 ? "mayor de edad" : "menor de edad";
+
+        alert("Buenos días " + nombre + ", ustes es " + adulto + " y ha vivido " + edad * 365);
+    </script>
+</body>
+
+</html>

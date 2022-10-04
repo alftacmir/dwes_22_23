@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+
+<body>
+    <!-- Se ingresan tres valores por teclado, si todos son iguales se imprime la suma
+del primero con el segundo y a este resultado se lo multiplica por el tercero
+(tener en cuenta que puede haber tres condiciones simples) -->
+
+    <script>
+        let num1 = Number(prompt("Introduzca el numero 1"))
+        let num2 = Number(prompt("Introduzca el numero 2"))
+        let num3 = Number(prompt("Introduzca el numero 3"))
+
+        num1 === num2 && num2 === num3 && num3 === num1 ? alert((num1 + num2) * num3) : "";
+
+    </script>
+</body>
+
+</html>

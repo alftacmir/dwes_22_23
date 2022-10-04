@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+
+<body>
+    <!-- De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo la
+siguiente información: nombre del aspirante, cantidad total de preguntas que se
+le realizaron y cantidad de preguntas que contestó correctamente. Se pide
+confeccionar un programa que lea los datos del aspirante e informe el nivel del
+mismo según el porcentaje de respuestas correctas que ha obtenido, y
+sabiendo que:
+● Nivel superior: Porcentaje>=90%.
+● Nivel medio: Porcentaje>=75%.
+● Nivel bajo: Porcentaje>=50%.
+● Fuera de nivel: Porcentaje<50% -->
+
+    <script>
+        let aspirante = prompt("Nombre del aspirante")
+        let total = parseInt(prompt("Total de preguntas realizadas"))
+        let correctas = parseInt(prompt("Introduzca el numero de respuestas correctas"))
+
+        let calculo = correctas / total * 100;
+
+        calculo >= 90 ? alert("El candidato " + aspirante + (" tiene un nivel bajo")) : calculo >= 75 ? alert("El candidato " + aspirante + (" tiene un nivel medio")) : calculo >= 50 ? alert("El candidato " + aspirante + (" tiene un nivel alto")) : alert("El candidato " + aspirante + " esta fuera del nivel")
+
+
+    </script>
+
+</body>
+
+</html>

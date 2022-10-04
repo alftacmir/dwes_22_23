@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+    <!-- Mostrar un mensaje indicando si el número introducido en una caja de texto es
+par o impar. -->
+
+    <input type="number" name="numero" id="num" onkeyup="espar()">
+    <div id="div">
+    </div>
+
+    <script>
+        function espar() {
+            let numero = document.getElementById("num").value;
+            calculo = numero % 2;
+
+            calculo == 0 ? document.getElementById("div").innerHTML = "El numero " + numero + " es par" : document.getElementById("div").innerHTML = "El numero " + numero + " es impar"
+        }
+    </script>
+</body>
+
+</html>

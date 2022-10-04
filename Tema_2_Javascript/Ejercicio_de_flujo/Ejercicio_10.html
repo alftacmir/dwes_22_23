@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <!-- Confeccionar un programa que permita cargar un número entero positivo de
+hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras. -->
+
+    <script>
+
+        let numero = parseInt(prompt("Introduzca un numero entero positivo"));
+
+        numero < 0 ? alert("El numero debe ser positivo") : numero < 10 ? alert("El numero tiene 1 cifra ") : numero < 100 && numero > 10 ? alert("El numero tiene 2 cifras") : numero > 100 && numero < 1000 ? alert("El numero tiene 3 cifras") : alert("Has introducido un numero demasiado grande");
+
+    </script>
+</body>
+
+</html>

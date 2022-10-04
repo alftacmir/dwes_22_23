@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <!-- Crear un bucle desde 1 hasta 200 donde se muestre en consola únicamente
+los números múltiplos de 5 y el número de números que no son primos.
+Nota: Aplicar modulo (%) -->
+
+<script>
+    let contador=0;
+    for (let i = 0; i <= 200; i++) {
+        i%5==0 ? console.log(i) : ""; 
+             
+        if(nprimo(i)){
+            contador++;
+        }
+    }
+    console.log(contador);
+       
+
+
+    function nprimo(i){
+        for (let j = 2; j < i; j++) {
+            if(i%j == 0){
+                return true;
+            }
+        }
+    }
+</script>
+</body>
+</html>
