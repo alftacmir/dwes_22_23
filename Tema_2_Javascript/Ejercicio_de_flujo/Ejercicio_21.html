@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+</head>
+
+<body>
+    <!--Escribe una función iterativa que dado un número entero n, retorne un array
+con todos los números enteros en orden decreciente desde n a 1.-->
+
+    <script>
+        let n = Number(prompt("Introduce un número"))
+        let miArray = Array();
+        for (let i = n; i > 0; i--) {
+            miArray.push(i);
+        }
+        document.write("El array final es " + miArray);
+    </script>
+</body>
+
+</html>

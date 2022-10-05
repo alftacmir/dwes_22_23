@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Crear un programa donde el usuario introduzca su altura, edad y sexo y le
+devuelva el peso ideal recomendado. La fórmula a aplicar es: 50+((altura150)/4)*3 + (Edad-20)/4 y si es mujer *0,9.-->
+
+    <script>
+        let altura = Number(prompt("Introduce la altura en cm"));
+        let edad = Number(prompt("Introduce tu edad"));
+        let sexo = prompt("Introduce el sexo (H/M)");
+        let peso = (50 + ((altura - 150) / 4) * 3 + (edad - 20 / 4))
+
+        switch (sexo) {
+            case 'H':
+                alert("Tu peso ideal es " + peso + "kg");
+                break;
+            case 'M':
+                alert("Tu peso ideal es " + peso * 0.9 + "kg");
+                break;
+        }
+    </script>
+</body>
+
+</html>

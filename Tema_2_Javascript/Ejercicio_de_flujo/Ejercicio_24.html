@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 24</title>
+</head>
+
+<body>
+    <!--Realizar un programa que simule un Juego de dados. El usuario empieza con
+50€ para apostar. El usuario indica a qué número apostar entre el 1 y el 6. Se
+hace una asignación al azar entre 1 y 6. Si el usuario acierta, gana el doble de
+lo apostado y si no acierta, pierde lo apostado. El juego acaba cuando el
+usuario llega a 0€ (pierde) o llega a 200€ (gana).-->
+
+    <script>
+        let dinero = 50;
+        do {
+            alert("Tienes ahora mismo " + dinero + "€")
+            let dineroApostado = Number(prompt("Seleccione la cantidad apostada"));
+            let elige = Number(prompt("Elige un numero del 1 al 6"));
+            let casino = Math.floor((Math.random() * 5) + 1);
+            alert("Ha salido el " + casino)
+            elige == casino ? dinero += (dineroApostado * 2) : dinero -= dineroApostado;
+
+
+        } while (dinero > 0 && dinero < 200);
+    </script>
+</body>
+
+</html>

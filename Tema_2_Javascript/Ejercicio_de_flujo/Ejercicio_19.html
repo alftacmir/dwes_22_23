@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19</title>
+</head>
+
+<body>
+    <!-- . Realizar un programa que introduciendo el mes y el año devuelva el número de
+días que tiene dicho mes. Recordar que hay que controlar si el año es bisiesto.-->
+
+    <script>
+        let mes = Number(prompt("Introduce el mes"));
+        let anno = Number(prompt("Introduce el año"));
+
+
+        switch (mes) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("El mes tiene 31 días");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("El mes tiene 30 días");
+                break;
+        }
+
+        mes === 2 && anno % 4 === 0 ? alert("El mes tiene 29 días") : mes === 2 ? alert("El mes tiene 28 días") : "";
+    </script>
+</body>
+
+</html>

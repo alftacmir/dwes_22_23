@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+</head>
+
+<body>
+    <!--. Calcular el precio de un producto introduciendo la base imponible (BI) y
+seleccionando el tipo de iva que se le aplica (normal:21%, reducido:10%) e
+introduciendo el peso para calcular los gastos de envío (Peso < 1Kg: 3€, Peso<
+3kg:5€ y Peso>=3Kg 10€).
+Precio= BI + Cuota IVA (%sobreBI) + Gastos envío-->
+
+    <script>
+        let base = Number(prompt("Introduce la base imponible"));
+        let tipo = prompt("Introduce el tipo de IVA (normal/reducido)");
+        let peso = Number(prompt("Introduce el peso"));
+
+        let gastos;
+        let iva;
+
+        tipo == "normal" ? iva = 0.21 : tipo == "reducido" ? iva = 0.10 : alert("Te has equivocado")
+
+        switch (peso) {
+            case peso >= 3:
+                gastos = 10;
+                break;
+            case peso > 1:
+                gastos = 5
+                break;
+            default:
+                gastos = 3
+                break;
+        }
+        alert("El precio total es de: " + (base + (base * iva) + gastos));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 25</title>
+</head>
+
+<body>
+    <!--Leer una cadena de texto en un formulario y generar un array con la función
+split(). Posteriormente, mostrar la siguiente información: Número de palabras,
+primera palabra, última palabra.-->
+
+    <input type="text" name="cadena" id="array">
+    <input type="button" value="Submit" onclick="dividir()">
+    <div id="div"></div>
+    <script>
+        function dividir() {
+            let texto = document.getElementById("array").value;
+            let vector = texto.split(' ');
+            document.getElementById("div").innerHTML = "El numero de palabras es " + vector.length + "</br>" +
+                "La primera palabra es " + vector[0] + "</br>" +
+                "La ultima palabra es " + vector[vector.length - 1];
+        }
+    </script>
+</body>
+
+</html>
