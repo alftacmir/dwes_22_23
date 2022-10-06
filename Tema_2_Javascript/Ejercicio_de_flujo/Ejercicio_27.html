@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--. Realiza una página que contenga una función JavaScript para hacer
 estadísticas sobre una cadena de texto que se introduzca, contando el número
@@ -13,5 +15,57 @@ de veces que aparece cada letra. Se deberá mostrar un listado con las letras
 del abecedario con el número de veces que aparece cada letra en la cadena
 que se la pasa. Utilizar un Array para almacenar la información estadística. No
 se tendrán en cuenta que pudiera haber tildes, consideraremos que no existen.-->
+
+
+    <input type="text" id="frase">
+    <input type="button" onclick="resultado()" value="calcular">
+
+    <script>
+        function resultado() {
+
+            let cadena = document.getElementById("frase").value;
+            let numeros = Array(27);
+            let abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q',
+                'r', 's', 't', 'u', 'v', 'w', 'j', 'y', 'z'
+            ];
+            let contador;
+            let indice = 0;
+            let suma = 0;
+
+            for (let i = 0; i < abecedario.length; i++) {
+                contador = 0;
+                for (let j = 0; j < cadena.length; j++) {
+                    if (cadena[j] == abecedario[i]) {
+                        contador++;
+                    }
+
+                }
+                numeros[indice] = contador;
+                indice++;
+            }
+
+
+            for (let i = 0; i < abecedario.length; i++) {
+                document.write(abecedario[i] + " : " + numeros[i] + "<br>");
+            }
+
+
+            for (let i = 0; i < numeros.length; i++) {
+                suma += numeros[i];
+            }
+
+            let porcentaje;
+
+            for (let i = 0; i < numeros.length; i++) {
+                if (numeros[i] != 0) {
+                    porcentaje = (numeros[i] / suma) * 100;
+                    document.write("El porcentaje de la letra " + abecedario[i] + " es: " + porcentaje + "%" + "<br>");
+                }
+            }
+
+
+        }
+    </script>
 </body>
+
 </html>

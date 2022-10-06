@@ -1,13 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--Realizar un programa que se introduzca la fecha de nacimiento y devuelva el
 signo del zodiaco.-->
+    <script>
+        let fecha = prompt("introduce tu fecha de nacimiento");
+
+        let array = fecha.split('/');
+
+
+        switch (array[1]) {
+            case "01":
+                if (array[0] >= "01" && array[0] <= "19") {
+                    alert("Eres de signo capricornio");
+                } else {
+                    alert("Eres de signo acuario");
+                }
+                break;
+            case "02":
+                if (array[0] >= "01" && array[0] <= "18") {
+                    alert("Eres de signo acuario");
+                } else {
+                    alert("Eres de signo piscis");
+                }
+                break;
+            case "03":
+                if (array[0] >= "01" && array[0] <= "20") {
+                    alert("Eres de signo piscis");
+                } else {
+                    alert("Eres de signo aries");
+                }
+                break;
+            case "04":
+                if (array[0] >= "01" && array[0] <= "19") {
+                    alert("Eres de signo aries");
+                } else {
+                    alert("Eres de signo tauro");
+                }
+                break;
+            case "05":
+                if (array[0] >= "01" && array[0] <= "20") {
+                    alert("Eres de signo tauro");
+                } else {
+                    alert("Eres de signo geminis");
+                }
+                break;
+            case "06":
+                if (array[0] >= "01" && array[0] <= "20") {
+                    alert("Eres de signo geminis");
+                } else {
+                    alert("Eres de signo cancer");
+                }
+                break;
+            case "07":
+                if (array[0] >= "01" && array[0] <= "22") {
+                    alert("Eres de signo cancer");
+                } else {
+                    alert("Eres de signo leo");
+                }
+                break;
+            case "08":
+                if (array[0] >= "01" && array[0] <= "22") {
+                    alert("Eres de signo leo");
+                } else {
+                    alert("Eres de signo virgo");
+                }
+                break;
+            case "09":
+                if (array[0] >= "01" && array[0] <= "22") {
+                    alert("Eres de signo virgo");
+                } else {
+                    alert("Eres de signo libra");
+                }
+                break;
+            case "10":
+                if (array[0] >= "01" && array[0] <= "22") {
+                    alert("Eres de signo libra");
+                } else {
+                    alert("Eres de signo escorpio");
+                }
+                break;
+            case "11":
+                if (array[0] >= "01" && array[0] <= "21") {
+                    alert("Eres de signo escorpio");
+                } else {
+                    alert("Eres de signo sagitario");
+                }
+                break;
+            case "12":
+                if (array[0] >= "01" && array[0] <= "21") {
+                    alert("Eres de signo sagitario");
+                } else {
+                    alert("Eres de signo capricornio");
+                }
+                break;
+            default:
+                alert("no es un mes valido");
+        }
+    </script>
 </body>
+
 </html>

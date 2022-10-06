@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--Dado un vector de enteros, comprobar el mayor, el menor y por último la media
 de todos.
 El botón «Cargar Ejemplo» pondrá un ejemplo de números predefinidos.-->
+    <input type="number" name="cadena" id="array">
+    <input type="button" value="Cargar Ejemplo" onclick="cargar()">
+    <input type="button" value="Ejecutar" onclick="activar()">
+    <div id="div"></div>
+    <script>
+        let datos = document.getElementById("array").value;
+        let vector = texto.split(' ');
+
+        function activar() {
+            let suma;
+            let media;
+            for (let i = 0; i < vector.length; i++) {
+                suma += vector[i];
+            }
+            media = suma / vector.length;
+
+            vector.sort;
+            document.getElementById("div").innerHTML = "La suma es " + suma + "</br>" +
+                "La media es " + media + "</br>" +
+                "El numero mas grande es " + vector[0] + "</br>" +
+                "El numero mas pequeño es " + vector[vector.length - 1] + "</br>"
+        }
+
+
+
+        function cargar() {
+            for (let i = 0; i < 4; i++) {
+                document.getElementById("array").innerHTML += Math.floor((Math.random * 100) + 1);
+
+            }
+        }
+    </script>
 </body>
+
 </html>
