@@ -1,0 +1,12 @@
+#F1{
+    width: fit-content;
+}
+#boton{
+    margin-left: 10em;
+}
+label{
+    font-weight: bold;
+}
+input,textarea{
+    background-color:rgb(255, 241, 224);
+}
