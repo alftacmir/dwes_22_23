@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
 
-<body>
+  <body>
     <form id="formulario">
-        <fieldset id="F1">
-            <p> <label for="DNI">DNI: </label><input type="text" id="dni"></p>
-            <p><label for="NOMBRE">Nombre: </label><input type="text" id="nombre"></p>
-            <p><label for="APELLIDOS">Apellidos: </label><input type="text" id="apellidos"></p>
-            <p><label for="TELEFONO">Telefono: </label><input type="number" id="Telefono"></p>
-            <p><textarea name="COMENTARIO" id="comentario" cols="50" rows="5" placeholder="Escribe tu comentario aquí" maxlength="250"></textarea></p>
-            <p><label for="HORA">Elige una hora: </label><input type="time" name="HOUR" id="hora"><input type="submit" value="Enviar" id="boton" onclick="enviar()"></p>
-        </fieldset>
-
-
-
+      <fieldset id="F1">
+        <p><label for="DNI">DNI: </label><input type="text" id="dni" /></p>
+        <p>
+          <label for="NOMBRE">Nombre: </label><input type="text" id="nombre" />
+        </p>
+        <p>
+          <label for="APELLIDOS">Apellidos: </label
+          ><input type="text" id="apellidos" />
+        </p>
+        <p>
+          <label for="TELEFONO">Telefono: </label
+          ><input type="text" id="telefono" />
+        </p>
+        <p>
+          <textarea
+            name="COMENTARIO"
+            id="comentario"
+            cols="50"
+            rows="5"
+            placeholder="Escribe tu comentario aquí"
+            maxlength="250"
+          ></textarea>
+        </p>
+        <p>
+          <label for="HORA">Elige una hora: </label
+          ><input type="time" name="HOUR" id="hora" /><input
+            type="submit"
+            value="Enviar"
+            id="boton"
+          />
+        </p>
+      </fieldset>
     </form>
-</body>
-
+  </body>
 </html>
