@@ -56,7 +56,7 @@ function validApellidos(apellidos) {
     return validacion.test(apellidos);
 }
 function validEmail(email){
-    const validacion = /^([a-zA-Z]+)[@]([a-z]+)[.]([a-z]{2,3})$/
+    const validacion = /^([a-zA-Z0-9]+)[@]([a-z]+)[.]([a-z]{2,3})$/
     return validacion.test(email)
 }
 function validWeb(web){
