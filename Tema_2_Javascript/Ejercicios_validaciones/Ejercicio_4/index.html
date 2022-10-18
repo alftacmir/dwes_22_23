@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    
+    <form id="formulario">
+        <fieldset style="width: fit-content;">
+            <p><label>Fecha de creación: </label><input type="date" name="FECHA" id="date" required></p>
+            <p><label>Cocinero: </label> <input type="text" name="cocinero" id="cook" maxlength="7"></p>
+            <p><label>Destinatario: </label><input type="text" name="destinatario" id="reciever"></p>
+            <p><label>Gramos: </label><input type="number" name="gramos" id="weight" min="100" max="5000"></p>
+            <p><label>Composición: </label><input type="text" name="composicion" id="formula"></p>
+            <p><label>Cuenta bancaria: </label><input type="text" name="cuanta_bancaria" id="bank" maxlength="20"></p>
+
+            <p><input type="submit" value="Enviar"></p>
+
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
