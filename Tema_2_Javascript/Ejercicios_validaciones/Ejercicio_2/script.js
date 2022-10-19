@@ -13,7 +13,7 @@ function handleSubmit(e) {
     if (email == false || validEmail(email) == false) {
       alert(
         "El DNI debe ser un valor válido : \n -Debe estar relleno \n - Debe tener el formato de ejemolo"
-      );
+      )
     } else {
       if (nombre == false || validNombre(nombre) == false) {
         alert(
@@ -42,6 +42,8 @@ function handleSubmit(e) {
         }
       }
     }
+    setCookie("usuario",(nombre+" "+apellidos,1))
+    setCookie("email", email, 1)
   }
   
 

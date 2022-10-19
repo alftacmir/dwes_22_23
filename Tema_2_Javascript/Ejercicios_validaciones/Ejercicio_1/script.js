@@ -5,6 +5,7 @@ const $APELLIDOS = document.getElementById("apellidos");
 const $TELEFONO = document.getElementById("telefono");
 const $COMENTARIO = document.getElementById("comentario");
 const $HORA = document.getElementById("hora");
+const $FALLO = document.getElementById("error");
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -48,6 +49,7 @@ function handleSubmit(e) {
       }
     }
   }
+  checkCookie_here();
 }
 
 function validDNI(dni) {
@@ -68,4 +70,22 @@ function validTelefono(telefono) {
   const validacion = /^[+][3][4]+\s[0-9]{9}$/;
   return validacion.test(telefono);
 }
+
+function checkCookie_here(){
+  let contador = getCookie("errores"); //extrae el valor función anterior
+  if (contador != "") {
+    //Si no está vacío
+    setCookie("errores",++contador, 1)
+  } else {
+      setCookie("errores", 1, 1); //Se inicializa la variable
+    }
+    $FALLO.value = getCookie("errores")
+  }
+function restartCookie(){
+  setCookie("errores",0,1)
+  $FALLO.value = 0;
+}
+
+
 $FORM.addEventListener("submit", handleSubmit);
+
