@@ -99,11 +99,46 @@ function checkFormula(formula) {
 }
 function checkBank(bank) {
   const validation = /[A-Z]{2}[0-9]{2}(-)[0-9]{12}(-)[0-9]{2}$/;
+  let check1
+  let check2
+  let letras = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+    
+      let value1 = letras.indexOf(bank[0])+1;
+      let value2 = letras.indexOf(bank[1])+1;
+
+      let total = value1 + value2;
+
+      if(total == parseInt((bank[2]) + (bank[3]))){
+        check1 = true
+      }else{
+        check1 = false
+      }
+
+      let mitad1 = 0;
+      let mitad2 = 0;
+
+      for (let i = 0; i< bank.length; i++){
+        if (i > 4 && i < 11) {
+          mitad1 += parseInt(bank[i]);
+        } 
+
+        if (i > 10 && i < 17){
+          mitad2 += parseInt(bank[i]);
+        }
+        
+      }
+
+      let penultimo = parseInt(mitad1 / 6);
+      let ultimo= parseInt(mitad2 / 6);
+
+      if(penultimo+ultimo == bank[bank.length-2]){
+        check2 = true
+      }else{
+        check2 = false
+      }
 
 
-
-
-  if(validation.test(bank)){
+  if(validation.test(bank) && check1 && check2){
     return true
   }else{
     return false
